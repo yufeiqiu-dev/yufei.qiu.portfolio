@@ -135,3 +135,12 @@ section {
   left: auto;
 }
 
+.icon {
+  cursor: pointer;
+  height: 5rem;
+}
+
+.text-container {
+  display:flex;
+}
+
