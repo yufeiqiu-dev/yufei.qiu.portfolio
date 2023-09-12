@@ -6,10 +6,16 @@ import Project from './Project';
 import Footer from './Footer';
 import About from './About';
 import { HashRouter, Route, Routes } from 'react-router-dom';
+import {Helmet} from "react-helmet";
 function App() {
   return (
     <HashRouter>
     <div className="App">
+    <Helmet>
+       <meta charSet="utf-8" />
+        <title>Porfolio</title>
+        <meta name="description" content="Helmet application" />
+    </Helmet>
       <Navbar/>
       <div className = "content">
         <Routes>
