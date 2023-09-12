@@ -93,7 +93,7 @@
 
 
 .details-container {
-  padding: 1.5rem;
+  padding: 2rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
@@ -123,12 +123,15 @@
 }
 .section-container {
   display: flex;
+  
 }
 
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
-  box-sizing: border-box;
+  margin-left: -50px;
+  box-sizing:border-box;
   min-height: fit-content;
+  left: auto;
 }
+
