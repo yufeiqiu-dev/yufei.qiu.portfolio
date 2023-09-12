@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/yufei.qiu.porfolio/static/css/main.c6ff20d8.css",
-    "main.js": "/yufei.qiu.porfolio/static/js/main.7b8e294e.js",
+    "main.js": "/yufei.qiu.porfolio/static/js/main.2f2ecda9.js",
     "static/js/787.3be87db2.chunk.js": "/yufei.qiu.porfolio/static/js/787.3be87db2.chunk.js",
     "static/media/profile.JPG": "/yufei.qiu.porfolio/static/media/profile.2df8a0d0a8590cd5bc98.JPG",
     "static/media/logo.svg": "/yufei.qiu.porfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/yufei.qiu.porfolio/index.html",
     "main.c6ff20d8.css.map": "/yufei.qiu.porfolio/static/css/main.c6ff20d8.css.map",
-    "main.7b8e294e.js.map": "/yufei.qiu.porfolio/static/js/main.7b8e294e.js.map",
+    "main.2f2ecda9.js.map": "/yufei.qiu.porfolio/static/js/main.2f2ecda9.js.map",
     "787.3be87db2.chunk.js.map": "/yufei.qiu.porfolio/static/js/787.3be87db2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c6ff20d8.css",
-    "static/js/main.7b8e294e.js"
+    "static/js/main.2f2ecda9.js"
   ]
 }
