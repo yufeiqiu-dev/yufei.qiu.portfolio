@@ -5,31 +5,26 @@ import Home from './Home';
 import Project from './Project';
 import Footer from './Footer';
 import About from './About';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 function App() {
   return (
-    <Router>
+    <HashRouter>
     <div className="App">
       <Navbar/>
       <div className = "content">
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/project">
-            <Project />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/about" element = {<About />} />
+        </Routes>
+        
       </div>
       
     </div>
     <div>
       <Footer />
     </div>
-     </Router>
+     </HashRouter>
     
     
     
