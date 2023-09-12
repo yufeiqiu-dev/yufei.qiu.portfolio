@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/yufei.qiu.porfolio/static/css/main.c6ff20d8.css",
-    "main.js": "/yufei.qiu.porfolio/static/js/main.293329af.js",
-    "static/js/787.18f622bf.chunk.js": "/yufei.qiu.porfolio/static/js/787.18f622bf.chunk.js",
-    "static/media/profile.JPG": "/yufei.qiu.porfolio/static/media/profile.2df8a0d0a8590cd5bc98.JPG",
-    "static/media/logo.svg": "/yufei.qiu.porfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/yufei.qiu.porfolio/index.html",
-    "main.c6ff20d8.css.map": "/yufei.qiu.porfolio/static/css/main.c6ff20d8.css.map",
-    "main.293329af.js.map": "/yufei.qiu.porfolio/static/js/main.293329af.js.map",
-    "787.18f622bf.chunk.js.map": "/yufei.qiu.porfolio/static/js/787.18f622bf.chunk.js.map"
+    "main.css": "/lilflyy.github.io/yufei.qiu.porfolio/static/css/main.c6ff20d8.css",
+    "main.js": "/lilflyy.github.io/yufei.qiu.porfolio/static/js/main.48d0d456.js",
+    "static/js/787.3be87db2.chunk.js": "/lilflyy.github.io/yufei.qiu.porfolio/static/js/787.3be87db2.chunk.js",
+    "static/media/profile.JPG": "/lilflyy.github.io/yufei.qiu.porfolio/static/media/profile.2df8a0d0a8590cd5bc98.JPG",
+    "static/media/logo.svg": "/lilflyy.github.io/yufei.qiu.porfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/lilflyy.github.io/yufei.qiu.porfolio/index.html",
+    "main.c6ff20d8.css.map": "/lilflyy.github.io/yufei.qiu.porfolio/static/css/main.c6ff20d8.css.map",
+    "main.48d0d456.js.map": "/lilflyy.github.io/yufei.qiu.porfolio/static/js/main.48d0d456.js.map",
+    "787.3be87db2.chunk.js.map": "/lilflyy.github.io/yufei.qiu.porfolio/static/js/787.3be87db2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c6ff20d8.css",
-    "static/js/main.293329af.js"
+    "static/js/main.48d0d456.js"
   ]
 }
