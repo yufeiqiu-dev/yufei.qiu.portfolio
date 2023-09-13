@@ -63,12 +63,11 @@
 }
 
 .project-preview h2 {
-  font-size: 20px;
+  font-size: 2vw;
   margin-bottom: 8px;
 }
 
 .main-footer {
-  
   background-color: rgb(6, 2, 24);
   text-align: center;
   position:sticky;
