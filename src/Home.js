@@ -2,7 +2,8 @@ import Typewriter from 'typewriter-effect'
 const Home = () => {
     return ( 
         <div className="home" >
-            <h2>
+            <div>
+                <h2>
                 <Typewriter 
                 options={{
                     autoStart: true,
@@ -12,7 +13,10 @@ const Home = () => {
                 }}
                 />
 
-            </h2>
+                </h2>
+
+            </div>
+           
         </div>
     
 

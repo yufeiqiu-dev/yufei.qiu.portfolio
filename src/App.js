@@ -28,8 +28,9 @@ function App() {
       
     </div>
     <div>
-      <Footer />
+    <Footer />
     </div>
+    
      </HashRouter>
     
     
