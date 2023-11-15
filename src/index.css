@@ -6,6 +6,13 @@
   font-family: "Quicksand";
   color: #333;
 }
+.app {
+  padding-bottom: 70px;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
 .home {
   height: 80vh;
   display: flex;
@@ -47,7 +54,7 @@
   position: relative;
 }
 .project {
-  height:96vh;
+  height:180vh;
   
 }
 
@@ -70,25 +77,34 @@
 .main-footer {
   background-color: rgb(6, 2, 24);
   text-align: center;
-  position:sticky;
+  
   bottom: 0;
   width: 100%;
   padding-top: 10px;
+  height: 100px;
+  vertical-align: top;
+  margin-bottom: -50;
 }
 .main-footer h4 {
   color: white;
+  padding-bottom: 10px;
 }
 .main-footer p {
   color: white;
+  margin-bottom: 0;
 }
 
 .col {
   text-align: center;
   display: flex;
   gap: 10rem;
-  margin-right: 50px;
+  margin-bottom: 0;
+  justify-content: center;
 }
-
+.row {
+  height: 80px;
+  margin-bottom: 0;
+}
 .about {
   position: relative;
 }
@@ -98,7 +114,10 @@
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-
+.details-container{
+  min-width: 100px;
+  max-width: 300px;
+}
 .about-details-container {
   justify-content: center;
   flex-direction: column;
