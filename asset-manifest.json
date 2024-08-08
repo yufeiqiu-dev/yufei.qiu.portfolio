@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/yufei.qiu.porfolio/static/css/main.34cf6567.css",
-    "main.js": "/yufei.qiu.porfolio/static/js/main.a9ab634e.js",
+    "main.css": "/yufei.qiu.porfolio/static/css/main.079a5b7b.css",
+    "main.js": "/yufei.qiu.porfolio/static/js/main.ff27e799.js",
     "static/js/787.3be87db2.chunk.js": "/yufei.qiu.porfolio/static/js/787.3be87db2.chunk.js",
-    "static/media/bg2-removebg-preview.png": "/yufei.qiu.porfolio/static/media/bg2-removebg-preview.bf0ed0190970e6255ac7.png",
     "static/media/linkedin.png": "/yufei.qiu.porfolio/static/media/linkedin.0b9b3d5430ec7fdfcd07.png",
     "static/media/profile.JPG": "/yufei.qiu.porfolio/static/media/profile.2df8a0d0a8590cd5bc98.JPG",
     "static/media/purdue.svg": "/yufei.qiu.porfolio/static/media/purdue.31ced0df482806e64339cf4e392dfe95.svg",
     "static/media/logo.svg": "/yufei.qiu.porfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/yufei.qiu.porfolio/index.html",
-    "main.34cf6567.css.map": "/yufei.qiu.porfolio/static/css/main.34cf6567.css.map",
-    "main.a9ab634e.js.map": "/yufei.qiu.porfolio/static/js/main.a9ab634e.js.map",
+    "main.079a5b7b.css.map": "/yufei.qiu.porfolio/static/css/main.079a5b7b.css.map",
+    "main.ff27e799.js.map": "/yufei.qiu.porfolio/static/js/main.ff27e799.js.map",
     "787.3be87db2.chunk.js.map": "/yufei.qiu.porfolio/static/js/787.3be87db2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34cf6567.css",
-    "static/js/main.a9ab634e.js"
+    "static/css/main.079a5b7b.css",
+    "static/js/main.ff27e799.js"
   ]
 }
