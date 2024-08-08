@@ -14,10 +14,12 @@ html, body {
   margin: 0;
 }
 .home {
+  width: 100%;
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .home h2 {
   text-align: center;
@@ -54,7 +56,7 @@ html, body {
   position: relative;
 }
 .project {
-  height:180vh;
+  height:300vh;
   
 }
 

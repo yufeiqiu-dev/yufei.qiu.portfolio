@@ -17,7 +17,7 @@ const About = () => {
           <div class="about-containers">
             <div class="details-container">
               <h3>Skills</h3>
-              <p>Java C/C++ <br /> Python <br /> Bash<br /> SQL <br /> Web</p>
+              <p>Java C/C++ <br /> Python <br /> Bash<br /> SQL/MongoDB <br /> React js</p>
             </div>
             <div class="details-container">
               <h3>Education</h3>
