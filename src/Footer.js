@@ -15,7 +15,7 @@ const Footer = () => {
           
             <div>
                 <p>Created by Yufei Qiu</p>
-                <p>Last Updated: 08/07/24</p>
+                <p>Last Updated: 02/05/25</p>
             </div>
             <div>
                 <p>Phone Number: <br /> 502-759-0858</p>

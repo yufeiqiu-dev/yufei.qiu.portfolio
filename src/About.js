@@ -17,18 +17,18 @@ const About = () => {
           <div class="about-containers">
             <div class="details-container">
               <h3>Skills</h3>
-              <p>Java C/C++ <br /> Python <br /> Bash<br /> SQL/MongoDB <br /> React js</p>
+              <p>Java C/C++ <br /> Python <br /> Spring boot<br /> SQL/MongoDB <br /> React js <br/> Scala</p>
             </div>
             <div class="details-container">
               <h3>Education</h3>
-              <p>Purdue University Currently pursuing Bachelor of Science</p>
+              <p>Purdue University Currently pursuing master of Science</p>
             </div>
           </div>
           <div class="text-container">
             
             <div>
                  <p>
-            I am Yufei Qiu, a junior in Purdue University, majoring in Computer Science with a Mathematics minor. Always looking forward to learn new things!
+            I am Yufei Qiu, a Master student in Purdue University, majoring in Computer Science. Always looking forward to learn new things!
             </p>
             </div>
             <div> 

@@ -5,7 +5,8 @@ const Navbar = () => {
             <h1>Yufei Qiu</h1>
             <div className="links">
                 <a href='#/'>Home</a>
-                <a href='#/project'>Experience</a>
+                <a href='#/experience'>Experience</a>
+                <a href='#/project'>Projects</a>
                 <a href='#/about'>About me</a>
                 <a href='#/contact'>Contact me</a>
             </div>

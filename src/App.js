@@ -8,6 +8,7 @@ import About from './About';
 import Contact from './Contact';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import {Helmet} from "react-helmet";
+import Experience from './Experience';
 function App() {
   return (
     <HashRouter>
@@ -24,13 +25,17 @@ function App() {
           <Route path="/project" element={<Project />} />
           <Route path="/about" element = {<About />} />
           <Route path = "/contact" element = {<Contact />} />
+          <Route path ="/experience" element ={<Experience/>} />
         </Routes>
         
       </div>
       
     </div>
     <div>
-    <Footer />
+      <footer>
+        <Footer />
+      </footer>
+    
     </div>
     
      </HashRouter>
