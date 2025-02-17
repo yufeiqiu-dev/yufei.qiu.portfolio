@@ -1,46 +1,61 @@
-import pic from './profile.JPG'
-import school from './purdue.svg'
+import pic from './profile.JPG';
+import school from './purdue.svg';
+import Layout from './Layout';
+
 const About = () => {
     const openInNewTab = (url) => {
-        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
-        if (newWindow) newWindow.opener = null
-    }
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+        if (newWindow) newWindow.opener = null;
+    };
+
     return ( 
-        <section className="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img src={pic} className="about-pic"/>
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h3>Skills</h3>
-              <p>Java C/C++ <br /> Python <br /> Spring boot<br /> SQL/MongoDB <br /> React js <br/> Scala</p>
+        <Layout>
+            <div className="about-container">
+                <section className="about-section">
+                    <p className="section-intro">Get To Know More</p>
+                    <h1 className="section-title">About Me</h1>
+
+                    <div className="about-content">
+                        {/* Profile Image */}
+                        <div className="profile-image-container">
+                            <img src={pic} alt="Profile" className="profile-image"/>
+                        </div>
+
+                        {/* Details Section */}
+                        <div className="about-info">
+                            <div className="info-box">
+                                <h3>Skills</h3>
+                                <p>Java | C/C++ | Python | Spring Boot | SQL/MongoDB | React.js | Node | Scala | Pytorch</p>
+                            </div>
+
+                            <div className="info-box">
+                                <h3>Education</h3>
+                                <p>Purdue University, B.S. in Computer Science, Minor in Mathematics</p>
+                                <p>Purdue University, M.S. in Computer Science</p>
+                            </div>
+                        </div>
+
+                        {/* Bio and School Link */}
+                        <div className="about-text">
+                            <p>
+                                Hi, I’m <strong>Yufei Qiu</strong>, a Master’s student at <strong>Purdue University</strong>, majoring in Computer Science.
+                                I have a passion for problem-solving, full-stack development, and learning new technologies. Always looking forward to learning new things!
+                            </p>
+
+                            <div className="school-logo-container">
+                                <img 
+                                    src={school} 
+                                    alt="Purdue University" 
+                                    className="school-logo" 
+                                    onClick={() => openInNewTab("https://www.purdue.edu")} 
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-            <div class="details-container">
-              <h3>Education</h3>
-              <p>Purdue University Currently pursuing master of Science</p>
-            </div>
-          </div>
-          <div class="text-container">
-            
-            <div>
-                 <p>
-            I am Yufei Qiu, a Master student in Purdue University, majoring in Computer Science. Always looking forward to learn new things!
-            </p>
-            </div>
-            <div> 
-               
-                    <img src={school} className="icon" onClick={() => { openInNewTab("https://www.purdue.edu") }}/>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-     );
-}
- 
+        </Layout>
+    );
+};
+
 export default About;

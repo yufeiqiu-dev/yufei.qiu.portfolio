@@ -19,7 +19,6 @@ function App() {
         <meta name="description" content="Helmet application" />
     </Helmet>
       <Navbar/>
-      <div className = "content">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Project />} />
@@ -27,15 +26,8 @@ function App() {
           <Route path = "/contact" element = {<Contact />} />
           <Route path ="/experience" element ={<Experience/>} />
         </Routes>
-        
-      </div>
+
       
-    </div>
-    <div>
-      <footer>
-        <Footer />
-      </footer>
-    
     </div>
     
      </HashRouter>

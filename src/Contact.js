@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Layout from './Layout';
 
 const Contact = () => {
     const form = useRef();
@@ -18,6 +19,7 @@ const Contact = () => {
 
   
     return (
+      <Layout>
         <div className='contact'>
             <h2>Contact me</h2>
       <form ref={form} onSubmit={sendEmail}>
@@ -30,6 +32,7 @@ const Contact = () => {
         <button type="submit" value="Send">Send</button>
       </form>
       </div>
+      </Layout>
     );
 }
 export default Contact;

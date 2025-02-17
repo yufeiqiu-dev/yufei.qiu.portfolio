@@ -1,40 +1,42 @@
-import linkedin from './linkedin.png'
+import linkedin from './linkedin.png';
+
 const Footer = () => {
     const openInNewTab = (url) => {
-        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
-        if (newWindow) newWindow.opener = null
-    }
-    return ( 
-        <div className="main-footer">
-      <div className="container">
-        <div className="row">
-          {/* Column1 */}
-          <h4>Contact Information</h4>
-          <div className="col">
-            
-          
-            <div>
-                <p>Created by Yufei Qiu</p>
-                <p>Last Updated: 02/05/25</p>
-            </div>
-            <div>
-                <p>Phone Number: <br /> 502-759-0858</p>
-            </div>
-            <div>
-                 <p>Email:<br/> qiu202@purdue.edu</p>
-            </div>
-            
-            <div>
-            <img src={linkedin} className="link-icon" onClick={() => { openInNewTab("https://www.linkedin.com/in/yufei-qiu-242067210") }}/>
-            </div>
-           
-          </div>
-         
-      </div>
-    </div>
-    </div>
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+        if (newWindow) newWindow.opener = null;
+    };
 
-     );
-}
- 
+    return ( 
+        <footer className="footer">
+            <div className="footer-container">
+                <div className="footer-column">
+                    <h4>More Information</h4>
+                    <p>Created by Yufei Qiu</p>
+                    <p>Last Updated: 02/17/25</p>
+                </div>
+                
+                <div className="footer-column">
+                    <h4>Get in Touch</h4>
+                    <p><strong>Phone:</strong> 502-759-0858</p>
+                    <p><strong>Email:</strong> qiu202@purdue.edu</p>
+                </div>
+
+                <div className="footer-column">
+                    <h4>Connect</h4>
+                    <img 
+                        src={linkedin} 
+                        className="linkedin-icon" 
+                        alt="LinkedIn" 
+                        onClick={() => openInNewTab("https://www.linkedin.com/in/yufei-qiu-242067210")} 
+                    />
+                </div>
+            </div>
+
+            <div className="footer-bottom">
+                <p>© 2025 Yufei Qiu. All Rights Reserved.</p>
+            </div>
+        </footer>
+    );
+};
+
 export default Footer;

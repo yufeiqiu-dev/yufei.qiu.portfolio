@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Layout from './Layout';
 const Experience = () => {
     const [projects, setProjects] = useState([
         {title: 'Software Engineering Intern at Kohl\'s (June 2024 - Aug 2024)', role: 'Software Engineer', body: 'Worked in a corporate environment on a team of engineers. Implemented features, testcases, and upgrading existing code in spring boot applications. Focused on dealing with real world problems and deployed most of the changes to real world applications. Worked in agile development and trained in extreme programming.', id: 10},
@@ -9,20 +10,25 @@ const Experience = () => {
     ]);
     
     return ( 
-        <div className="experience">
-            {projects.map((project) => (
-                <div className='project-preview' key={project.id}>
-                    <h2>{ project.title }</h2>
-                    {project.role && <p>Role: { project.role }</p>}
-                    <p>{ project.author }</p>
-                    <p>Description: { project.body }</p>
-                    {project.link && (
-                        <p>link: {project.link}</p>
-                    )}
+        <Layout>
+            <div className="project-container">
+                <div className="projects-list">
+                    {projects.map((project) => (
+                        <div className="project-item" key={project.id}>
+                            <h2>{project.title}</h2>
+                            {project.role && <p><strong>Role:</strong> {project.role}</p>}
+                            {project.author && <p><strong>Author:</strong> {project.author}</p>}
+                            <p className="project-description">{project.body}</p>
+                            {project.link && (
+                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                                    View Project →
+                                </a>
+                            )}
+                        </div>
+                    ))}
                 </div>
-            ))}
-
-        </div>
+            </div>
+        </Layout>
 
      );
 }

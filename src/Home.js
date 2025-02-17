@@ -1,9 +1,12 @@
 import Typewriter from 'typewriter-effect'
+import Layout from './Layout';
 const Home = () => {
     return ( 
+        <Layout>
         <div className="home" >
-            <div>
+
                 <h2>
+                <span className="typewriter-span">
                 <Typewriter 
                 options={{
                     autoStart: true,
@@ -12,12 +15,15 @@ const Home = () => {
                     strings: ["Hi, welcome to my personal website"]
                 }}
                 />
+                </span>
 
                 </h2>
 
+            
             </div>
-           
-        </div>
+        </Layout>
+        
+
     
 
 
