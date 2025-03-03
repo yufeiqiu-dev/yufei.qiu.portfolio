@@ -128,6 +128,22 @@ background-position: center;
   color: #d1274e;
 }
 
+.page-item{
+  padding: 10px 15px;
+  cursor: pointer;
+  height:20px;
+  width: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.page-item:hover {
+  background-color: #e8eae9;
+  transform: scale(1.1); /* Slight zoom effect */
+}
 
 /* Project and Experience Section ends */
 /* Footer starts */

@@ -1,5 +1,20 @@
-import { useState } from 'react';
+import { useState, useReducer, useEffect } from 'react';
 import Layout from './Layout';
+
+const projects_per_page = 4
+const initialState = {starting_index: 0, ending_index:projects_per_page - 1}
+function reducer(state, action) {
+    switch(action.type) {
+      case 'SWITCH':
+        const start = action.index * projects_per_page
+        const end = start + projects_per_page - 1
+        console.log(start)
+        console.log(end)
+        return {starting_index: start, ending_index:end}
+      default:
+        return state
+    }
+}
 
 const Project = () => {
     const [projects] = useState([
@@ -34,12 +49,25 @@ const Project = () => {
           body: 'Developed a multi-threaded interactive app for teachers and students. Features include quiz creation, grading, and user authentication with object-based file storage.', 
           id: 4 }
     ]);
-
+    const [state, dispatch] = useReducer(reducer, initialState);
+    const [proj_split, setProject_split] = useState([])
+    const max_pages = Math.ceil(projects.length / projects_per_page)
+    const [page_numbers, setPageNumbers] = useState([...Array(max_pages).keys()]);
+    const [selected_page, setSelectedPage] = useState(0)
+    const project_page = (page_number) => {
+      dispatch({type:'SWITCH', index: page_number})
+    };
+    useEffect(()=>{
+      const pro = projects.filter((_, index) => index >= state.starting_index && index <= state.ending_index);
+      setProject_split(pro);
+    }, [state]);
+    
     return (
         <Layout>
+        <div style={{ height: "120vh", display: "grid", gridTemplateRows: "92% 8%" }}>
             <div className="project-container">
                 <div className="projects-list">
-                    {projects.map((project) => (
+                    {proj_split.map((project, index) =>  (
                         <div className="project-item" key={project.id}>
                             <h2>{project.title}</h2>
                             {project.role && <p><strong>Role:</strong> {project.role}</p>}
@@ -51,9 +79,33 @@ const Project = () => {
                                 </a>
                             )}
                         </div>
-                    ))}
+                    )
+                    )}
                 </div>
             </div>
+            <div style={{  
+                display: "flex", 
+                alignItems: "center", 
+                justifyContent: "center" // Center content horizontally
+              }}>
+                <ul style={{ 
+                  display: "flex", 
+                  listStyle: "none", 
+                  padding: 0, 
+                  margin: 0,
+                  gap: "10px" // Adds spacing between numbers
+                }}>
+                  {page_numbers.map((num) => (
+                    <li key={num} className="page-item" style={{backgroundColor: selected_page === num ? "#e8eae9" : "white"}} onClick={()=>{
+                      setSelectedPage(num)
+                      project_page(num)}}>
+                      {num}
+                    </li>
+                  ))}
+                </ul>
+            </div>
+
+          </div>
         </Layout>
     );
 };
