@@ -64,7 +64,7 @@ const Project = () => {
     
     return (
         <Layout>
-        <div style={{ height: "120vh", display: "grid", gridTemplateRows: "92% 8%" }}>
+        <div style={{ minHeight: "50vh",display: "grid", gridTemplateRows: "92% 8%" }}>
             <div className="project-container">
                 <div className="projects-list">
                     {proj_split.map((project, index) =>  (
@@ -86,7 +86,8 @@ const Project = () => {
             <div style={{  
                 display: "flex", 
                 alignItems: "center", 
-                justifyContent: "center" // Center content horizontally
+                justifyContent: "center", // Center content horizontally
+                paddingBottom:"40px"
               }}>
                 <ul style={{ 
                   display: "flex", 

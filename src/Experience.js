@@ -11,6 +11,7 @@ const Experience = () => {
     
     return ( 
         <Layout>
+            <div style={{minHeight:"80vh"}}>
             <div className="project-container">
                 <div className="projects-list">
                     {projects.map((project) => (
@@ -27,6 +28,7 @@ const Experience = () => {
                         </div>
                     ))}
                 </div>
+            </div>
             </div>
         </Layout>
 
