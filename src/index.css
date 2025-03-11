@@ -96,6 +96,7 @@ background-position: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
   transition: background 0.2s ease-in-out;
+  min-height: fit-content;
 }
 
 .project-item:hover {
@@ -106,7 +107,7 @@ background-position: center;
   font-size: 1.5rem;
   color: #333;
   margin-bottom: 5px;
-  height: 8vh;
+  min-height: 8vh;
 }
 
 .project-description {
