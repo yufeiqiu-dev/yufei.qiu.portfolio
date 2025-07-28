@@ -1,39 +1,56 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import Layout from './Layout';
 
-const Contact = () => {
-    const form = useRef();
+function Contact() {
+  const [state, handleSubmit] = useForm("mgvzyvpd");
 
-    const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm('service_c3tvq5s', 'template_ggywm43', form.current, 'MVNOYjHSsxa_zXY2_')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-        alert("You email is received, I will reach you back soon!")
-    };
+  return (
+    <Layout>
+      <div className="contact-wrapper">
+        <div className="contact-card">
+          <h2 className="contact-heading">Inbox Open!</h2>
+          <p className="contact-subtext">Feel free to reach out — I’d love to connect.</p>
 
-  
-    return (
-      <Layout>
-        <div className='contact'>
-            <h2>Contact me</h2>
-      <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <button type="submit" value="Send">Send</button>
-      </form>
+          {state.succeeded ? (
+            <p className="thank-you-text">✅ Thanks! I’ll get back to you soon.</p>
+          ) : (
+            <form onSubmit={handleSubmit} className="form-minimal">
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <ValidationError prefix="Email" field="email" errors={state.errors} className="contact-error" />
+
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                required
+              />
+              <ValidationError prefix="Message" field="message" errors={state.errors} className="contact-error" />
+
+              <button type="submit" disabled={state.submitting}>
+                {state.submitting ? "Sending..." : "Send"}
+              </button>
+
+            </form>
+          )}
+        </div>
       </div>
-      </Layout>
-    );
+    </Layout>
+  );
 }
+
 export default Contact;
- 

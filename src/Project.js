@@ -18,7 +18,16 @@ function reducer(state, action) {
 
 const Project = () => {
     const [projects] = useState([
-        { title: 'Music Genre Classification Project', 
+      {title:"Networking Router Project",
+        author:"Yufei Qiu, Dylan Li, Daniel Castro, Juan Esteban Guevara",
+        body: "Built a software-based NAT router in C that handles IP packet forwarding using raw sockets, with full support for ICMP, TCP, and UDP traffic. Implemented a custom DHCP server with dynamic IP allocation and persistent lease assignment, along with a NAT table and timeout logic to manage address translation and port mapping."
+      },
+        {title: "Music Genre Classification based on Text",
+          author: "Yufei Qiu, Joel Quan, Yatian Lai",
+          body:"Developed a multi-class music genre classifier for song lyrics using transformer-based models (BERT) and LSTM/GRU with GloVe embeddings. Preprocessed 10K+ lyrics and fine-tuned models to achieve 73% accuracy, comparing performance across architectures and conducting error analysis for improvement."
+        },
+
+        { title: 'Music Genre Classification based on Audio', 
           author: 'Yufei Qiu, Maanas Karwa, Samantha Sudhoff, Yatian Lai, Siddharth Prabakar', 
           body: 'Trained multiple machine learning models (KNN, SVM, XGBoost, Random Forest) to improve classification performance. Hypertuned parameters and optimized using PCA, ensemble methods, and more.', 
           id: 0 },
@@ -64,7 +73,7 @@ const Project = () => {
     
     return (
         <Layout>
-        <div style={{ minHeight: "50vh",display: "grid", gridTemplateRows: "92% 8%" }}>
+        <div style={{ minHeight: "50vh",display: "grid", gridTemplateRows: "92% 8%", backgroundColor:"#f8f9fa" }}>
             <div className="project-container">
                 <div className="projects-list">
                     {proj_split.map((project, index) =>  (

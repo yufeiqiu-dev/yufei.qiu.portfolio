@@ -4,7 +4,6 @@
 * {
   margin: 0;
   font-family: "Quicksand";
-  
 }
 .app {
   padding-bottom: 70px;
@@ -267,61 +266,136 @@ background-position: center;
   margin-bottom: 10px;
 }
 
-.about-text {
-  max-width: 700px;
-  font-size: 1.1rem;
-  color: #333;
-  line-height: 1.6;
-}
-
-.school-logo-container {
+.about-text-with-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
   margin-top: 20px;
 }
 
-.school-logo {
-  width: 60px;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+.about-paragraph {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
 }
+
+.school-logo-inline img,
+.school-logo {
+  height: 50px;
+  cursor: pointer;
+}
+
 
 .school-logo:hover {
   transform: scale(1.1);
 }
-/* About me ends */
 
-
-.contact {
-  height: 80vh;
-  max-width: 400px;
-  margin: 0 auto;
+.download-resume-bottom {
+  margin-top: 30px;
   text-align: center;
 }
-.contact h2 {
-  font-size: 20px;
-  color: #f1356d;
-  margin-bottom: 30px;
+
+.download-button {
+  padding: 12px 24px;
+  background-color: #f1356d;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(241, 53, 109, 0.3);
 }
 
-label {
-  text-align: left;
-  display: block;
+.download-button:hover {
+  background-color: #d1274e;
+  transform: scale(1.05);
 }
 
-input, textarea {
+/* About me ends */
+
+/* Contact me Page */
+.contact-wrapper {
+  min-height: 70vh;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-card {
+  background: white;
+  padding: 24px 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 400px;
   width: 100%;
-  padding: 6px 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+
+.contact-heading {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #c66c7b;
+  margin-bottom: 6px;
+}
+
+.contact-subtext {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.form-minimal input,
+.form-minimal textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  background-color: white;
   box-sizing: border-box;
-  display: block;
 }
 
-button {
+.form-minimal button {
   background: #f1356d;
-  color: #fff;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  border-radius: 8px;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
   cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
+
+.form-minimal button:hover {
+  background: #d1274e;
+  transform: scale(1.05);
+}
+
+.contact-error {
+  color: #d1274e;
+  margin-top: 14px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+.thank-you-text {
+  color: green;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+

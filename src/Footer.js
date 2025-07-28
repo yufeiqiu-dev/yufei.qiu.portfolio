@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="footer-column">
                     <h4>More Information</h4>
                     <p>Created by Yufei Qiu</p>
-                    <p>Last Updated: 03/03/25</p>
+                    <p>Last Updated: 07/27/25</p>
                 </div>
                 
                 <div className="footer-column">
