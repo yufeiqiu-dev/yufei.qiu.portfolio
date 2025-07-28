@@ -34,31 +34,125 @@ background-position: center;
 .typewriter-text {
   color: red;
 }
+/* nav bar */
 .navbar {
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
-  
+  position: relative;
 }
-.navbar h1 {
+
+.navbar-title {
   color: black;
   margin-right: 50px;
 }
-.navbar .links {
+
+.links {
   margin-left: auto;
 }
-.navbar a {
+
+.links a {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
   color: #333;
 }
-.navbar a:hover {
+
+.links a:hover {
   color: #f1356d;
 }
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: auto;
+  z-index: 1001;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 999px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Create the "X" */
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open .bar:nth-child(2) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+/* Mobile menu dropdown */
+.mobile-menu {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+  min-width: 180px;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+.mobile-menu a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 6px 8px;
+  transition: background-color 0.2s ease;
+}
+
+.mobile-menu a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive behavior */
+@media screen and (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+
+/* nav ends */
 .content {
   max-width: 50%;
   margin: auto;
