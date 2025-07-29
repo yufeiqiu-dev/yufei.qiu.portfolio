@@ -12,7 +12,9 @@ const Experience = () => {
     
     return ( 
         <Layout>
-            <div style={{minHeight:"80vh", backgroundColor:"#f8f9fa"}}>
+            <div className='app-content'>
+
+
             <div className="project-container">
                 <div className="projects-list">
                     {projects.map((project) => (
@@ -30,7 +32,10 @@ const Experience = () => {
                     ))}
                 </div>
             </div>
+            
             </div>
+
+
         </Layout>
 
      );

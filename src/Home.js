@@ -3,6 +3,7 @@ import Layout from './Layout';
 const Home = () => {
     return ( 
         <Layout>
+            <div className='app-content'>
         <div className="home" >
 
                 <h2>
@@ -20,6 +21,7 @@ const Home = () => {
                 </h2>
 
             
+            </div>
             </div>
         </Layout>
         

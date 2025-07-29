@@ -73,7 +73,8 @@ const Project = () => {
     
     return (
         <Layout>
-        <div style={{ minHeight: "50vh",display: "grid", gridTemplateRows: "92% 8%", backgroundColor:"#f8f9fa" }}>
+        <div className='app-content'>
+        <div style={{ display: "grid", gridTemplateRows: "92% 8%", backgroundColor:"#f8f9fa" }}>
             <div className="project-container">
                 <div className="projects-list">
                     {proj_split.map((project, index) =>  (
@@ -115,6 +116,7 @@ const Project = () => {
                 </ul>
             </div>
 
+          </div>
           </div>
         </Layout>
     );

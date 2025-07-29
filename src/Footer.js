@@ -10,12 +10,6 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-container">
                 <div className="footer-column">
-                    <h4>More Information</h4>
-                    <p>Created by Yufei Qiu</p>
-                    <p>Last Updated: 07/27/25</p>
-                </div>
-                
-                <div className="footer-column">
                     <h4>Get in Touch</h4>
                     <p><strong>Phone:</strong> 502-759-0858</p>
                     <p><strong>Email:</strong> qiu202@purdue.edu</p>

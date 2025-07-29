@@ -10,6 +10,7 @@ const About = () => {
 
   return (
     <Layout>
+        <div className='app-content'>
       <div className="about-container">
         <section className="about-section">
           <p className="section-intro">Get To Know More</p>
@@ -61,6 +62,7 @@ const About = () => {
             </a>
           </div>
         </section>
+      </div>
       </div>
     </Layout>
   );

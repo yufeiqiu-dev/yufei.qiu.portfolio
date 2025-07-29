@@ -7,6 +7,7 @@ function Contact() {
 
   return (
     <Layout>
+      <div className='app-content'>
       <div className="contact-wrapper">
         <div className="contact-card">
           <h2 className="contact-heading">Inbox Open!</h2>
@@ -48,6 +49,7 @@ function Contact() {
             </form>
           )}
         </div>
+      </div>
       </div>
     </Layout>
   );
