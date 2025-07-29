@@ -1,6 +1,7 @@
 import pic from './profile.JPG';
 import school from './purdue_logo.png';
 import Layout from './Layout';
+import resume from './MyResume.pdf';
 
 const About = () => {
   const openInNewTab = (url) => {
@@ -57,7 +58,7 @@ const About = () => {
 
           {/* Resume Download Button at Bottom */}
           <div className="download-resume-bottom">
-            <a href="/MyResume.pdf" download className="download-button">
+          <a href={resume} download="YufeiQiu_Resume.pdf" className="download-button">
               📄 Download My Resume
             </a>
           </div>
