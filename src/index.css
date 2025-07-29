@@ -74,34 +74,35 @@ background-position: center;
 /* Hamburger icon */
 .hamburger {
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 28px;
-  height: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   cursor: pointer;
   margin-left: auto;
   z-index: 1001;
+  transition: all 0.3s ease;
+  background-color: transparent; /* clean base */
+  border: none;
+  box-shadow: none;
 }
 
-.bar {
-  height: 3px;
-  width: 100%;
-  background-color: #333;
-  border-radius: 999px;
-  transition: all 0.3s ease-in-out;
+/* Only apply styling when open (showing "X") */
+.hamburger.is-open {
+  background-color: white;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Create the "X" */
-.hamburger.open .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.open .bar:nth-child(2) {
-  transform: rotate(-45deg) translate(6px, -6px);
-}
-
-.hamburger.open .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+/* Icon inside */
+.hamburger-icon,
+.hamburger-x {
+  font-size: 32px;
+  color: #333;
+  transition: transform 0.3s ease, color 0.3s ease;
+  user-select: none;
+  line-height: 1;
 }
 
 
@@ -139,11 +140,9 @@ background-position: center;
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: scale(0.97);
   }
   to {
     opacity: 1;
-    transform: scale(1);
   }
 }
 

@@ -27,11 +27,15 @@ useEffect(() => {
     <nav className="navbar">
       <h1 className="navbar-title">Yufei Qiu</h1>
 
-      <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
+      <div className={`hamburger ${isOpen ? 'is-open' : ''}`} onClick={toggleMenu}>
+        {isOpen ? (
+          <span className="hamburger-x">×</span>
+        ) : (
+          <span className="hamburger-icon">&#9776;</span>
+        )}
       </div>
+
+
 
       <div className="links">
         <a href="#/">Home</a>
