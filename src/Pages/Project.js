@@ -1,5 +1,5 @@
 import { useState, useReducer, useEffect } from 'react';
-import Layout from './Layout';
+import Layout from '../components/Layout';
 
 const projects_per_page = 4
 const initialState = {starting_index: 0, ending_index:projects_per_page - 1}

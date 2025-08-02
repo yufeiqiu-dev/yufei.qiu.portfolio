@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import Layout from './Layout';
+import Layout from '../components/Layout';
 
 function Contact() {
   const [state, handleSubmit] = useForm("mgvzyvpd");

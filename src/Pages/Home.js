@@ -1,5 +1,5 @@
 import Typewriter from 'typewriter-effect'
-import Layout from './Layout';
+import Layout from '../components/Layout';
 const Home = () => {
     return ( 
         <Layout>

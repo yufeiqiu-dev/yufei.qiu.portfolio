@@ -1,14 +1,14 @@
-import logo from './logo.svg';
-import Navbar from './Navbar';
+import logo from './images/logo.svg';
+import Navbar from './components/Navbar';
 import React from 'react'
-import Home from './Home';
-import Project from './Project';
-import Footer from './Footer';
-import About from './About';
-import Contact from './Contact';
+import Home from './Pages/Home';
+import Project from './Pages/Project';
+import Footer from './components/Footer';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import {Helmet} from "react-helmet";
-import Experience from './Experience';
+import Experience from './Pages/Experience';
 function App() {
   return (
     <HashRouter>

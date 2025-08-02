@@ -1,7 +1,7 @@
-import pic from './profile.JPG';
-import school from './purdue_logo.png';
-import Layout from './Layout';
-import resume from './MyResume.pdf';
+import pic from '../images/profile.JPG';
+import school from '../images/purdue_logo.png';
+import Layout from '../components/Layout';
+import resume from '../resume/MyResume.pdf';
 
 const About = () => {
   const openInNewTab = (url) => {

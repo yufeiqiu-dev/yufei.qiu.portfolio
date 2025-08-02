@@ -1,4 +1,4 @@
-import linkedin from './linkedin.png';
+import linkedin from '../images/linkedin.png';
 
 const Footer = () => {
     const openInNewTab = (url) => {

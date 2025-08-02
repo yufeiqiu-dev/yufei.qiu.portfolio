@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Layout from './Layout';
+import Layout from '../components/Layout';
 const Experience = () => {
     const [projects, setProjects] = useState([
         {title: "SDE Intern at Amazon Web Service (May 2025 - Aug 2025)", role: "SDE Intern", body: "At AWS Secrets Manager, I designed a CloudWatch-based metric system that emits operational and cost-related insights to customer accounts, enabling up to $48M in potential annual savings by identifying underutilized resources. As a stretch goal, I built an integrated dashboard in the Secrets Manager console, contributing to a large-scale service managing nearly 50 million secrets."},
