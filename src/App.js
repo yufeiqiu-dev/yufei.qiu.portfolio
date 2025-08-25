@@ -1,9 +1,6 @@
-import logo from './images/logo.svg';
 import Navbar from './components/Navbar';
-import React from 'react'
 import Home from './Pages/Home';
-import Project from './Pages/Project';
-import Footer from './components/Footer';
+import Project from './Pages/ProjectPage/Project';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import { HashRouter, Route, Routes } from 'react-router-dom';
