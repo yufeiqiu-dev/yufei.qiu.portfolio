@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/yufei.qiu.porfolio/static/css/main.08141d76.css",
-    "main.js": "/yufei.qiu.porfolio/static/js/main.f05b0caa.js",
+    "main.css": "/yufei.qiu.porfolio/static/css/main.5861ccd2.css",
+    "main.js": "/yufei.qiu.porfolio/static/js/main.39029dfc.js",
     "static/js/787.3be87db2.chunk.js": "/yufei.qiu.porfolio/static/js/787.3be87db2.chunk.js",
     "static/media/bg.avif": "/yufei.qiu.porfolio/static/media/bg.18482afe79002491ed77.avif",
     "static/media/MyResume.pdf": "/yufei.qiu.porfolio/static/media/MyResume.5449e8af41618dbc05ef.pdf",
@@ -9,14 +9,14 @@
     "static/media/linkedin.png": "/yufei.qiu.porfolio/static/media/linkedin.0b9b3d5430ec7fdfcd07.png",
     "static/media/profile.JPG": "/yufei.qiu.porfolio/static/media/profile.2df8a0d0a8590cd5bc98.JPG",
     "static/media/we_logo.jpeg": "/yufei.qiu.porfolio/static/media/we_logo.89d2d06a12667c1e3a6e.jpeg",
-    "static/media/logo.svg": "/yufei.qiu.porfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/logo.svg": "/yufei.qiu.porfolio/static/media/logo.6ce24c58023cc2f8fd88.svg",
     "index.html": "/yufei.qiu.porfolio/index.html",
-    "main.08141d76.css.map": "/yufei.qiu.porfolio/static/css/main.08141d76.css.map",
-    "main.f05b0caa.js.map": "/yufei.qiu.porfolio/static/js/main.f05b0caa.js.map",
+    "main.5861ccd2.css.map": "/yufei.qiu.porfolio/static/css/main.5861ccd2.css.map",
+    "main.39029dfc.js.map": "/yufei.qiu.porfolio/static/js/main.39029dfc.js.map",
     "787.3be87db2.chunk.js.map": "/yufei.qiu.porfolio/static/js/787.3be87db2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.08141d76.css",
-    "static/js/main.f05b0caa.js"
+    "static/css/main.5861ccd2.css",
+    "static/js/main.39029dfc.js"
   ]
 }
