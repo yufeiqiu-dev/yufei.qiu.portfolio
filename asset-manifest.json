@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/yufei.qiu.portfolio/static/css/main.48467b13.css",
-    "main.js": "/yufei.qiu.portfolio/static/js/main.bf9763cc.js",
+    "main.js": "/yufei.qiu.portfolio/static/js/main.267229b4.js",
     "static/js/787.f7f1ddb5.chunk.js": "/yufei.qiu.portfolio/static/js/787.f7f1ddb5.chunk.js",
     "static/media/bg.avif": "/yufei.qiu.portfolio/static/media/bg.18482afe79002491ed77.avif",
     "static/media/MyResume.pdf": "/yufei.qiu.portfolio/static/media/MyResume.608b4b7bcf0df783d45d.pdf",
@@ -12,11 +12,11 @@
     "static/media/logo.svg": "/yufei.qiu.portfolio/static/media/logo.6ce24c58023cc2f8fd88.svg",
     "index.html": "/yufei.qiu.portfolio/index.html",
     "main.48467b13.css.map": "/yufei.qiu.portfolio/static/css/main.48467b13.css.map",
-    "main.bf9763cc.js.map": "/yufei.qiu.portfolio/static/js/main.bf9763cc.js.map",
+    "main.267229b4.js.map": "/yufei.qiu.portfolio/static/js/main.267229b4.js.map",
     "787.f7f1ddb5.chunk.js.map": "/yufei.qiu.portfolio/static/js/787.f7f1ddb5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48467b13.css",
-    "static/js/main.bf9763cc.js"
+    "static/js/main.267229b4.js"
   ]
 }
