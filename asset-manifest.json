@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/yufei.qiu.portfolio/static/css/main.48467b13.css",
-    "main.js": "/yufei.qiu.portfolio/static/js/main.267229b4.js",
+    "main.js": "/yufei.qiu.portfolio/static/js/main.40508e29.js",
     "static/js/787.f7f1ddb5.chunk.js": "/yufei.qiu.portfolio/static/js/787.f7f1ddb5.chunk.js",
     "static/media/bg.avif": "/yufei.qiu.portfolio/static/media/bg.18482afe79002491ed77.avif",
-    "static/media/MyResume.pdf": "/yufei.qiu.portfolio/static/media/MyResume.608b4b7bcf0df783d45d.pdf",
+    "static/media/MyResume.pdf": "/yufei.qiu.portfolio/static/media/MyResume.e798396dcc5e8e08a43e.pdf",
     "static/media/purdue_logo.png": "/yufei.qiu.portfolio/static/media/purdue_logo.a6819fb3d5407df703b5.png",
     "static/media/linkedin.png": "/yufei.qiu.portfolio/static/media/linkedin.0b9b3d5430ec7fdfcd07.png",
     "static/media/profile.JPG": "/yufei.qiu.portfolio/static/media/profile.2df8a0d0a8590cd5bc98.JPG",
@@ -12,11 +12,11 @@
     "static/media/logo.svg": "/yufei.qiu.portfolio/static/media/logo.6ce24c58023cc2f8fd88.svg",
     "index.html": "/yufei.qiu.portfolio/index.html",
     "main.48467b13.css.map": "/yufei.qiu.portfolio/static/css/main.48467b13.css.map",
-    "main.267229b4.js.map": "/yufei.qiu.portfolio/static/js/main.267229b4.js.map",
+    "main.40508e29.js.map": "/yufei.qiu.portfolio/static/js/main.40508e29.js.map",
     "787.f7f1ddb5.chunk.js.map": "/yufei.qiu.portfolio/static/js/787.f7f1ddb5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48467b13.css",
-    "static/js/main.267229b4.js"
+    "static/js/main.40508e29.js"
   ]
 }
