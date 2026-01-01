@@ -1,6 +1,23 @@
 // src/data/projectsData.js
 export const projectsData = [
   {
+    title: "Personal CRM (WIP)",
+    category: "Web Development",
+    body: "Developed a personal CRM web application using Python Fast API and Neo4j graph database for backend graph retrieval, supporting user edit mode to adjust their graphs. Planning on writing a React frontend to visualize and interact with the graph data secured with firebase for both frontend and backend.",
+  },
+  {
+    title: "AutoSlides",
+    category: "Machine Learning",
+    body: "Developed an AI-powered web application that generates presentation slides from user-provided text input. Utilized google gemini for content generation, integrated into a Python Flask backend alongside firebase for user authentication and AWS S3 for data storage. ",
+    link: "https://github.com/yufeiqiu-dev/AutoSlides-Backend"
+  },
+  {
+    title: "Job Application Manager",
+    category: "Web Development",
+    body: "Developed a full-stack web application using React for the frontend and Supabase, Node.js, and Express for the backend. Implemented user authentication, job tracking features, and LLM support to automatically scrape web content and add it into applications database.",
+    link: "https://github.com/yufeiqiu-dev/job-app-manager"
+  },
+  {
     title: "Networking Router Project",
     category: "Networking",
     author: "Yufei Qiu, Dylan Li, Daniel Castro, Juan Esteban Guevara",
